@@ -18,3 +18,18 @@ def remove_url_anchor(url)
 end
 remove_url_anchor('www.codewars.com#about')
 # return 'www.codewars.com'
+
+def even_numbers(arr,n)
+  even_arr = []
+  arr.reverse.each do |num|
+    unless even_arr.count == n
+      even_arr << num if num.even?
+    end
+  end
+  even_arr.reverse
+end
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+n = 3
+even_numbers(arr, n)
+# return [4, 6, 8]
