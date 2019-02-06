@@ -33,3 +33,14 @@ arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 n = 3
 even_numbers(arr, n)
 # return [4, 6, 8]
+
+def cat_mouse(x)
+  if x.count('.') <= 3
+    return 'Caught!'
+  else
+    return 'Escaped!'
+  end
+end
+
+x = 'C....m'
+# return 'Escaped1'
